@@ -26,9 +26,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 "Smart indent
-set si
+"set si
 "Wrap lines
-set wrap
+"set wrap
 
 " Kind of wraps text
 "set textwidth=80
@@ -80,3 +80,11 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+augroup vimrc_autocmds
+    autocmd!
+        " highlight characters past column 120
+        autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=White
+        autocmd FileType python match Excess /\%120v.*/
+        autocmd FileType python set nowrap
+        augroup END
