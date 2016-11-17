@@ -10,6 +10,8 @@ Bundle 'gmarik/vundle'
 
 " The bundles you install will be listed here
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Support for Git
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
 
