@@ -12,6 +12,8 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Support for Git
 Bundle 'tpope/vim-fugitive'
+" NerdTree (file browser)
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
@@ -75,6 +77,9 @@ set laststatus=2
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" Shortcuts
+map <F2> :NERDTreeToggle<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
