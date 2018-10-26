@@ -67,7 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export DEFAULT_USER="af-magic"
+export DEFAULT_USER="ronan"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
